@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svg heart shape</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="sec4-ani-ani sec4-ani-ani4">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <filter id="f1" x="-250%" y="-250%" width="500%" height="500%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+        </filter>
+        <path
+          id="heartShadow"
+          class="path"
+          fill="none"
+          stroke="#1F51FF"
+          stroke-width="3"
+          stroke-linejoin="round"
+          filter="url(#f1)"
+          d="M 50 90 Q 52 80 76 58 Q 84 52 90 45 A 1 1 0 0 0 50 20 A 1 1 0 0 0 10 45 Q 16 52 23 58 Q 48 80 50 90 z"
+        />
+        <path
+          id="heart"
+          class="path"
+          fill="none"
+          stroke="#1F51FF"
+          stroke-width="2"
+          stroke-linejoin="round"
+          d="M 50 90 Q 52 80 76 58 Q 84 52 90 45 A 1 1 0 0 0 50 20 A 1 1 0 0 0 10 45 Q 16 52 23 58 Q 48 80 50 90 z"
+        />
+        <path
+          id="heartShadow2"
+          class="path"
+          fill="none"
+          stroke="#FF10F0"
+          stroke-width="3"
+          stroke-linejoin="round"
+          filter="url(#f1)"
+          d="M 50 90 Q 52 80 76 58 Q 84 52 90 45 A 1 1 0 0 0 50 20 A 1 1 0 0 0 10 45 Q 16 52 23 58 Q 48 80 50 90 z"
+        />
+        <path
+          id="heart2"
+          class="path"
+          fill="none"
+          stroke="#FF10F0"
+          stroke-width="2"
+          stroke-linejoin="round"
+          d="M 50 90 Q 52 80 76 58 Q 84 52 90 45 A 1 1 0 0 0 50 20 A 1 1 0 0 0 10 45 Q 16 52 23 58 Q 48 80 50 90 z"
+        />
+      </svg>
+    </div>
+  </body>
+</html>

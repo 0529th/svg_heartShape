@@ -1,0 +1,39 @@
+.sec4-ani-ani {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 10000;
+  perspective: 500;
+  width: fit-content;
+  height: fit-content;
+}
+.sec4-ani-ani4 svg {
+  height: 350px;
+  width: 350px;
+  /* 	stroke-dasharray: 268.6; */
+  /* 	269.74 */
+}
+.sec4-ani-ani4 #heart,
+#heartShadow {
+  stroke-dasharray: 67.435;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear infinite;
+}
+.sec4-ani-ani4 #heart2,
+#heartShadow2 {
+  stroke-dasharray: 67.435;
+  stroke-dashoffset: 67.435;
+  animation: dash2 2s linear infinite;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 539.48;
+  }
+}
+@keyframes dash2 {
+  to {
+    stroke-dashoffset: 606.915;
+  }
+}
